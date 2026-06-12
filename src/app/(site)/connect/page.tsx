@@ -118,7 +118,9 @@ export default async function ConnectPage({
       <Section className="bg-white">
         <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
           <a
-            href="#"
+            href={SITE.socials.whatsapp}
+            target="_blank"
+            rel="noreferrer"
             className="flex items-center gap-4 rounded-2xl p-6 bg-[#25D366]/10 border border-[#25D366]/30 hover:bg-[#25D366]/15 transition"
           >
             <span className="grid place-items-center w-14 h-14 rounded-2xl bg-[#25D366] text-white shrink-0">
@@ -134,7 +136,9 @@ export default async function ConnectPage({
             </span>
           </a>
           <a
-            href="#"
+            href={SITE.socials.telegram}
+            target="_blank"
+            rel="noreferrer"
             className="flex items-center gap-4 rounded-2xl p-6 bg-[#229ED9]/10 border border-[#229ED9]/30 hover:bg-[#229ED9]/15 transition"
           >
             <span className="grid place-items-center w-14 h-14 rounded-2xl bg-[#229ED9] text-white shrink-0">

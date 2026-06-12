@@ -6,7 +6,7 @@ import StatCounter from "@/components/StatCounter";
 import Countdown from "@/components/Countdown";
 import { ICONS } from "@/components/Icons";
 import { Play, ArrowRight, WhatsApp, Telegram } from "@/components/Icons";
-import { MINISTRIES, STATS } from "@/lib/site";
+import { MINISTRIES, STATS, SITE } from "@/lib/site";
 import { getLiveSettings, getAnnouncements } from "@/lib/data";
 
 export default async function HomePage() {
@@ -250,13 +250,17 @@ export default async function HomePage() {
         />
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="#"
+            href={SITE.socials.whatsapp}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center gap-3 rounded-full px-8 py-4 font-display font-semibold text-white bg-[#25D366] hover:brightness-95 transition"
           >
             <WhatsApp className="w-6 h-6" /> Join WhatsApp Community
           </a>
           <a
-            href="#"
+            href={SITE.socials.telegram}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center gap-3 rounded-full px-8 py-4 font-display font-semibold text-white bg-[#229ED9] hover:brightness-95 transition"
           >
             <Telegram className="w-6 h-6" /> Join Telegram Channel
